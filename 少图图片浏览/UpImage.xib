@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UpImage">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="brD-1f-bg7">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="EUd-z1-KBI"/>
+                        <constraint firstAttribute="width" constant="50" id="Hif-7g-35T"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EUd-z1-KBI"/>
+                            <exclude reference="Hif-7g-35T"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixi-wn-J7o">
+                    <rect key="frame" x="30" y="0.0" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="dlN-aG-HDh"/>
+                        <constraint firstAttribute="width" constant="20" id="uv4-1M-jj8"/>
+                    </constraints>
+                    <state key="normal" image="xiangqingye_icon_pic_close"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.01176470588" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="brD-1f-bg7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ccs-Dd-kVu"/>
+                <constraint firstAttribute="trailing" secondItem="ixi-wn-J7o" secondAttribute="trailing" id="aEY-dq-hKj"/>
+                <constraint firstAttribute="trailing" secondItem="brD-1f-bg7" secondAttribute="trailing" id="dHs-cW-LP3"/>
+                <constraint firstItem="ixi-wn-J7o" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mls-Tl-nBo"/>
+                <constraint firstItem="brD-1f-bg7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uXn-z8-nmL"/>
+                <constraint firstAttribute="bottom" secondItem="brD-1f-bg7" secondAttribute="bottom" id="zeB-NZ-H7J"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeBtn" destination="ixi-wn-J7o" id="d3U-5C-jXt"/>
+                <outlet property="imgV" destination="brD-1f-bg7" id="f7W-Ln-TTp"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic0.jpg" width="425" height="794"/>
+        <image name="xiangqingye_icon_pic_close" width="11" height="11"/>
+    </resources>
+</document>
